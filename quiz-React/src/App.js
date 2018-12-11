@@ -3,7 +3,7 @@ import './App.css';
 
 import { connect } from 'react-redux';
 import Game from "./Game";
-import Result from "./Result"
+
 import Chronometer from "./Chronometer"
 import {questionAnswer} from "./redux/actions";
 import {changeQuestion} from "./redux/actions";
@@ -29,7 +29,9 @@ class App extends Component {
         }
         if (this.props.finished === false) {
         return (
+
             <div className="center">
+                <h1> Question {this.props.currentQuestion +1 } </h1>
                 <div className = "game">
                 <Game question={this.props.questions[this.props.currentQuestion]}
                       image={this.props.questions[this.props.currentQuestion].attachment.url}
@@ -58,16 +60,18 @@ class App extends Component {
         } else {
             return (
                 <div>
+                   
                     <h1>{comment}</h1>
                     Final score: {this.props.score}
                     <p>
-                        <button onClick={()=>{
+                        <button id = "anterior"onClick={()=>{
                             this.props.dispatch(initQuestions(this.props.questions))
                         }}>Try again</button>
-                        <button onClick={()=>{
+                        <button id="anterior"onClick={()=>{
                             window.location.reload(true);
                         }}>Reset</button>
                     </p>
+              
                 </div>
             );
         }

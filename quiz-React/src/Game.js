@@ -1,6 +1,6 @@
 import React from 'react';
 import Tip from './Tip.js';
-import Result from './Result.js';
+
 
 let anterior = false;
 let siguiente = false;

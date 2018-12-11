@@ -26,7 +26,7 @@ input{
   display:block;
   margin:auto;
 
-  margin-top: 50px;
+ 
   margin-bottom: 20px;
 
 }
@@ -51,8 +51,7 @@ h2{
 h4{
   margin:auto;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
 }
 
 
@@ -66,20 +65,25 @@ h4{
 
 }
 #siguiente {
-  width:130px;
+  width:200px;
   height: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
   border-color: green;
+  text-decoration-color: white;
   border-radius: 5px;
+  
 
 }
 #anterior {
-  width:130px;
+  width:200px;
   height: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
   border-color: green;
+  text-decoration-color: white;
+  
+  
   border-radius: 5px;
 
 }
@@ -112,10 +116,11 @@ h4{
 
 .buttons {
   margin: auto;
-  width: 32%;
+  width: 50%;
   border: 3px;
   padding: 10px;
   margin-top: 20px;
+
 
 }
 
@@ -123,13 +128,14 @@ h4{
   margin: auto;
   padding-top: 3px;
   padding-bottom: 8px;
-  width: 30%;
+  width: 50%;
   height: 2%;
   border: 1px;
   border-color: #6699ff;
   border-style: solid;
   border-spacing: 1px;
   padding: 10px;
+   margin-top: 20px;
 }
 
 .numbers {
@@ -204,23 +210,3 @@ h4{
   margin: 0 5px;
 }
 
-.btn {
-  background: #387EF5;
-  border: solid 1px #387EF5;
-  border-radius: 7px;
-  color: white;
-  cursor: pointer;
-  font-size: 0.8em;
-  outline: none;
-  padding: 10px 50px;
-  -webkit-transition: 300ms all;
-  transition: 300ms all;
-}
-
-.btn:hover{
-  opacity: 0.9;
-}
-
-.btn.disabled {
-  opacity: 0.5;
-}

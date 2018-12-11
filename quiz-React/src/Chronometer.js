@@ -52,8 +52,8 @@ export default class App extends React.Component {
                 <div >
 
                     <div className="numbers">
-                        <span>{this.zeroPad(this.state.minutes)}:</span>
-                        <span>{this.zeroPad(this.state.seconds)} </span>
+                        <h1><span>{this.zeroPad(this.state.minutes)}:</span>
+                        <span>{this.zeroPad(this.state.seconds)} </span></h1>
 
                     </div>
                 </div>

@@ -27,6 +27,9 @@ export default class Game extends React.Component{
                     }}/>
 
                       <h3>Tips:</h3>
+                  
+                  
+
                     {this.props.tips.map((tip) =>
                         <Tip key={tip} tip = {tip}/>
                     )}
@@ -38,12 +41,14 @@ export default class Game extends React.Component{
               
                 <div>
                 <div className = "buttons">
+                <div >
                     <button id = "anterior" disabled={anterior} onClick={()=>{
                         this.props.onChangeQuestion(-1);
                     }}>Anterior</button>
                     <button id="siguiente" disabled={siguiente} onClick={() =>{
                         this.props.onChangeQuestion(1);
                     }}>Siguiente</button>
+                </div>
 
                 <div>
                     </div>
